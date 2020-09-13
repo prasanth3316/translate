@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Translate</string>
+    <string name="download_model_before_using_that_language_don_t_download_all_models_download_only_the_needed">Download model before using that Language....Don\'t Download All Models... Download only the needed.....</string>
+</resources>

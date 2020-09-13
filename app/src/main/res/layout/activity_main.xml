@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorAccent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FDE0"
+                android:backgroundTint="#00FDE0"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/downloadlanguages"
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:dropDownSelector="@color/colorAccent"
+                    android:isScrollContainer="true"
+                    android:maxHeight="200dp"
+                    android:popupBackground="#ffffff"
+                    android:spinnerMode="dialog"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:backgroundTint="#10ECD2"
+                    android:cursorVisible="true"
+                    android:paddingHorizontal="25dp"
+                    android:paddingVertical="15dp"
+                    android:text="Download Model" />
+
+            </LinearLayout>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/download_model_before_using_that_language_don_t_download_all_models_download_only_the_needed"
+android:textAlignment="center"
+                android:background="#06FBDF"
+
+
+
+
+
+                />
+            <Spinner
+
+                android:id="@+id/inputlanguage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:spinnerMode="dialog"
+                android:isScrollContainer="true"
+
+
+                android:maxHeight="1500dp"
+                android:popupBackground="#ffffff"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="Type your Input....."
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="true"
+                    android:maxLines="6"
+
+
+                    android:minLines="6"
+                    android:padding="24dp"
+
+                    android:textSize="27dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFA6"
+                    android:backgroundTint="#00FDE0"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/outputlanguage"
+                        android:layout_width="263dp"
+                        android:layout_height="49dp"
+                        android:layout_weight="3"
+                        android:maxHeight="200dp"
+                        android:dropDownSelector="@color/colorAccent"
+                        android:isScrollContainer="true"
+                        android:popupBackground="#ffffff"
+                        android:textAlignment="center"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#06FBDF"
+                        android:backgroundTint="#10ECD2"
+                        android:cursorVisible="true"
+                        android:paddingHorizontal="25dp"
+                        android:paddingVertical="15dp"
+                        android:text="Translate" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/output"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:textSize="27dp"
+
+                    android:gravity="top"
+                    android:hint="Translated Text goes here..."
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="true"
+
+
+                    android:maxLines="7"
+                    android:minLines="7"
+
+                    android:padding="24dp"
+
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
